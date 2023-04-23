@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">InternProjectApplication</string>
+
+    <string name="mainTitle">Approval Matrix</string>
+    <string name="addItemTitle">Create New Approval Matrix</string>
+    <string name="buttonAddItemTitle">Add To List</string>
+    <string name="buttonReset">Reset</string>
+    <string name="buttonMainTitle">Tambah New Matrix</string>
+    <string name="rv_layout1_text1">Rang Limite of Approval</string>
+    <string name="rv_layout1_text2">Minimum IDR</string>
+    <string name="rv_layout2_text2">Maximum IDR</string>
+    <string name="rv_layout2_text3">50000</string>
+    <string name="rv_layout1_text3">0</string>
+    <string name="rv_layout3_text1">Number of Approval</string>
+    <string name="rv_layout4_text1">Approver 1</string>
+    <string name="rv_layout4_text2">GROUPMG1, GROUPMG2</string>
+    <string name="inputTextHere">Input Text Here</string>
+    <string name="inputMatrixName">Input Matrix Name</string>
+    <string name="idr">IDR</string>
+    <string name="textMinimum">Range of Approval (Minimum)</string>
+    <string name="textMaximum">Range of Approval (Maximum)</string>
+    <string name="numberOfApproval">Number Of Approval</string>
+    <string name="approvalMatrixAlias">Approval Matrix Alias</string>
+    <string name="feature">Feature</string>
+    <string name="selectFeature">Select Feature</string>
+    <string name="tvDefault">Default</string>
+    <string name="tvTransferOnline">Transfer Online</string>
+</resources>

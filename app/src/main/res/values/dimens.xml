@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--    layout width height-->
+    <dimen name="layout_10">10dp</dimen>
+    <dimen name="layout_20">20dp</dimen>
+    <dimen name="layout_25">25dp</dimen>
+    <dimen name="layout_50">50dp</dimen>
+    <dimen name="layout_70">70dp</dimen>
+    <dimen name="layout_80">80dp</dimen>
+    <dimen name="layout_100">100dp</dimen>
+    <dimen name="layout_150">150dp</dimen>
+    <dimen name="layout_200">200dp</dimen>
+    <dimen name="layout_300">300dp</dimen>
+    <dimen name="layout_400">400dp</dimen>
+
+    <!--    padding, margin-->
+    <dimen name="padmar_a5">-5dp</dimen>
+    <dimen name="padmar_a20">-20dp</dimen>
+    <dimen name="padmar_a50">-50dp</dimen>
+    <dimen name="padmar_a75">-75dp</dimen>
+    <dimen name="padmar_a110">-110dp</dimen>
+    <dimen name="padmar_1">1dp</dimen>
+    <dimen name="padmar_5">5dp</dimen>
+    <dimen name="padmar_10">10dp</dimen>
+    <dimen name="padmar_15">15dp</dimen>
+    <dimen name="padmar_20">20dp</dimen>
+    <dimen name="padmar_25">25dp</dimen>
+    <dimen name="padmar_30">30dp</dimen>
+    <dimen name="padmar_40">40dp</dimen>
+    <dimen name="padmar_50">50dp</dimen>
+    <dimen name="padmar_65">65dp</dimen>
+    <dimen name="padmar_70">70dp</dimen>
+    <dimen name="padmar_90">90dp</dimen>
+    <dimen name="padmar_100">100dp</dimen>
+
+    <!-- stroke Edit Text-->
+    <dimen name="size_0.5">0.5dp</dimen>
+    <dimen name="size_1">1dp</dimen>
+    <dimen name="size_2">2dp</dimen>
+    <dimen name="size_2.5">2.5dp</dimen>
+
+    <!--    text, icon size-->
+    <dimen name="size_0">0sp</dimen>
+    <dimen name="size_10">10sp</dimen>
+    <dimen name="size_12">12sp</dimen>
+    <dimen name="size_14">14sp</dimen>
+    <dimen name="size_15">15sp</dimen>
+    <dimen name="size_16">16sp</dimen>
+    <dimen name="size_18">18sp</dimen>
+    <dimen name="size_20">20sp</dimen>
+    <dimen name="size_24">24sp</dimen>
+    <dimen name="size_25">25sp</dimen>
+    <dimen name="size_26">26sp</dimen>
+    <dimen name="size_28">28sp</dimen>
+    <dimen name="size_30">30sp</dimen>
+    <dimen name="size_34">34sp</dimen>
+    <dimen name="size_40">40sp</dimen>
+
+    <!--    image-->
+    <dimen name="image_size_50">50dp</dimen>
+    <dimen name="image_size_60">60dp</dimen>
+    <dimen name="image_size_75">75dp</dimen>
+    <dimen name="image_size_80">80dp</dimen>
+    <dimen name="image_size_100">100dp</dimen>
+    <dimen name="image_size_65">65dp</dimen>
+    <dimen name="image_size_300">300dp</dimen>
+    <dimen name="image_size_350">350dp</dimen>
+</resources>
