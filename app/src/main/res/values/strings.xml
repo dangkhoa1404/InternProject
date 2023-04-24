@@ -3,8 +3,10 @@
 
     <string name="mainTitle">Approval Matrix</string>
     <string name="addItemTitle">Create New Approval Matrix</string>
+    <string name="updateItemTitle">Update Item</string>
     <string name="buttonAddItemTitle">Add To List</string>
     <string name="buttonReset">Reset</string>
+    <string name="buttonUpdate">Update Item</string>
     <string name="buttonMainTitle">Tambah New Matrix</string>
     <string name="rv_layout1_text1">Rang Limite of Approval</string>
     <string name="rv_layout1_text2">Minimum IDR</string>

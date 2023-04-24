@@ -12,14 +12,19 @@
         android:theme="@style/DefaultTheme"
         tools:targetApi="31">
         <activity
+            android:name="com.example.ui.updateitem.UpdateItemActivity"
+            android:exported="false" />
+        <activity
             android:name="com.example.ui.additem.AddItemActivity"
             android:exported="true"
             android:windowSoftInputMode="adjustPan">
-<!--            <intent-filter>-->
-<!--                <action android:name="android.intent.action.MAIN" />-->
 
-<!--                <category android:name="android.intent.category.LAUNCHER" />-->
-<!--            </intent-filter>-->
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
         </activity>
         <activity
             android:name="com.example.ui.main.MainActivity"

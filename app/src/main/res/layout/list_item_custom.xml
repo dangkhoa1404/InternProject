@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/llContainer"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_marginVertical="@dimen/padmar_10"
@@ -40,6 +41,7 @@
                     android:textColor="@color/buttonColor" />
 
                 <TextView
+                    android:id="@+id/tvMinimumIDR"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="end"
@@ -59,6 +61,7 @@
                     android:textColor="@color/buttonColor" />
 
                 <TextView
+                    android:id="@+id/tvMaximumIDR"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="end"
@@ -87,6 +90,7 @@
             android:textColor="@color/black" />
 
         <TextView
+            android:id="@+id/tvNumberOfApproval"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="end"
