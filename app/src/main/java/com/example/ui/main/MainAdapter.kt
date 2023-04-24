@@ -12,7 +12,7 @@ class MainAdapter(
 ) : RecyclerView.Adapter<MainAdapter.MyViewHolder>() {
 
     interface MainAdapterInterface {
-        fun deleteItem(id: Int)
+        fun deleteItem(item: Item)
         fun updateItem(id: Int)
     }
 
@@ -34,21 +34,18 @@ class MainAdapter(
         RecyclerView.ViewHolder(binding.root) {
         fun onBind(
             items: Item,
-            listener: MainAdapterInterface) {
+            listener: MainAdapterInterface
+        ) {
             binding.run {
                 items.run {
                     tvMinimumIDR.text = rangeMinimum.toString()
                     tvMaximumIDR.text = rangeMaximum.toString()
                     tvNumberOfApproval.text = numberOfApproval.toString()
-
-//                    Event
                     llContainer.setOnClickListener {
                         listener.updateItem(items.id)
                     }
-
                     llContainer.setOnLongClickListener {
-                        listener.deleteItem(items.id)
-
+                        listener.deleteItem(items)
                         true
                     }
                 }

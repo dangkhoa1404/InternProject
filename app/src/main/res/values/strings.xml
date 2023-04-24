@@ -27,4 +27,8 @@
     <string name="selectFeature">Select Feature</string>
     <string name="tvDefault">Default</string>
     <string name="tvTransferOnline">Transfer Online</string>
+    <string name="tvNotification">Xác nhận xóa?</string>
+    <string name="notification">Thông báo</string>
+    <string name="tvConfirm">Xác nhận</string>
+    <string name="tvDismiss">Không</string>
 </resources>

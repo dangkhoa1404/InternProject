@@ -6,4 +6,5 @@ object AppConstants {
     const val WARNING_3 = "Number Of Approval không được âm"
     const val WARNING_4 = "Không được để trống các ô nhập"
     const val ADD_SUCCESS = "Thêm thành công"
+    const val DELETE_SUCCESS = "Xóa thành công"
 }
