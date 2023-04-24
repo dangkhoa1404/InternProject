@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.ui.updateitem.UpdateItemActivity"
-    android:background="@color/mainColor">
+    android:background="@color/mainColor"
+    tools:context="com.example.ui.updateitem.UpdateItemActivity">
 
     <RelativeLayout
         android:id="@+id/rlContainer"
@@ -32,7 +32,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_above="@+id/btnChose"
+        android:layout_above="@+id/llUpdate"
         android:layout_below="@+id/rlContainer"
         android:background="@color/white"
         android:orientation="vertical"
@@ -87,6 +87,7 @@
                         android:hint="@string/inputMatrixName"
                         android:paddingHorizontal="@dimen/padmar_20"
                         android:paddingVertical="@dimen/padmar_15"
+                        android:singleLine="true"
                         android:textSize="@dimen/size_18" />
                 </LinearLayout>
 
@@ -160,6 +161,8 @@
                             android:layout_marginEnd="@dimen/padmar_5"
                             android:background="@color/white"
                             android:hint="@string/inputTextHere"
+                            android:inputType="number"
+                            android:singleLine="true"
                             android:textSize="@dimen/size_18" />
                     </LinearLayout>
 
@@ -201,6 +204,8 @@
                             android:layout_marginEnd="@dimen/padmar_5"
                             android:background="@color/white"
                             android:hint="@string/inputTextHere"
+                            android:inputType="number"
+                            android:singleLine="true"
                             android:textSize="@dimen/size_18" />
                     </LinearLayout>
                 </LinearLayout>
@@ -228,6 +233,7 @@
                         android:inputType="number"
                         android:paddingHorizontal="@dimen/padmar_20"
                         android:paddingVertical="@dimen/padmar_15"
+                        android:singleLine="true"
                         android:textSize="@dimen/size_18" />
                 </LinearLayout>
             </LinearLayout>
@@ -235,7 +241,7 @@
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/btnChose"
+        android:id="@+id/llUpdate"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
@@ -248,21 +254,11 @@
             android:id="@+id/btnUpdateItem"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="@dimen/padmar_15"
             android:background="@drawable/button_custom"
             android:drawablePadding="@dimen/padmar_10"
             android:text="@string/buttonUpdate"
             android:textColor="@color/white"
             android:textSize="@dimen/size_20" />
 
-        <Button
-            android:id="@+id/btnReset"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/additem_button_custom"
-            android:drawablePadding="@dimen/padmar_10"
-            android:text="@string/buttonReset"
-            android:textColor="@color/buttonColor"
-            android:textSize="@dimen/size_20" />
     </LinearLayout>
 </RelativeLayout>

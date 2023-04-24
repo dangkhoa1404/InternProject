@@ -7,13 +7,13 @@ import com.example.data.network.response.Item
 import com.example.internprojectapplication.databinding.ListItemCustomBinding
 
 class MainAdapter(
-    var listener: MainAdapterInterface,
+    private var listener: MainAdapterInterface,
     private var listItems: List<Item>
 ) : RecyclerView.Adapter<MainAdapter.MyViewHolder>() {
 
     interface MainAdapterInterface {
         fun deleteItem(item: Item)
-        fun updateItem(id: Int)
+        fun updateItem(item: Item)
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyViewHolder {
@@ -42,7 +42,7 @@ class MainAdapter(
                     tvMaximumIDR.text = rangeMaximum.toString()
                     tvNumberOfApproval.text = numberOfApproval.toString()
                     llContainer.setOnClickListener {
-                        listener.updateItem(items.id)
+                        listener.updateItem(items)
                     }
                     llContainer.setOnLongClickListener {
                         listener.deleteItem(items)

@@ -17,5 +17,12 @@ interface ItemDAO {
     @Query("SELECT * FROM itemTable WHERE id = :id")
     fun getItemByID(id: Int): Item?
 
-
+    @Query("UPDATE itemTable SET matrixName = :matrixName, rangeMinimum = :rangeMinimum, rangeMaximum = :rangeMaximum, numberOfApproval = :numberOfApproval WHERE id = :id")
+    fun updateDataItem(
+        id: Int,
+        matrixName: String?,
+        rangeMinimum: Int?,
+        rangeMaximum: Int?,
+        numberOfApproval: Int?
+    )
 }

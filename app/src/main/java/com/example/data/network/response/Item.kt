@@ -3,6 +3,7 @@ package com.example.data.network.response
 import androidx.room.Entity
 import androidx.room.PrimaryKey
 import com.google.gson.annotations.SerializedName
+import java.io.Serializable
 
 @Entity(tableName = "itemTable")
 data class Item(
@@ -19,4 +20,4 @@ data class Item(
     val rangeMaximum: Int?,
     @SerializedName("numberOfApproval")
     val numberOfApproval: Int?,
-)
+): Serializable

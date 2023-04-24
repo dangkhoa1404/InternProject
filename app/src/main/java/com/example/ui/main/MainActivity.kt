@@ -11,11 +11,13 @@ import com.example.extension.toast
 import com.example.internprojectapplication.databinding.ActivityMainBinding
 import com.example.internprojectapplication.databinding.DialogWarningCustomBinding
 import com.example.ui.additem.AddItemActivity
+import com.example.ui.updateitem.UpdateItemActivity
 import com.example.util.AppConstants
+import java.io.Serializable
 
 class MainActivity : AppCompatActivity(), MainAdapter.MainAdapterInterface {
     private lateinit var binding: ActivityMainBinding
-    private lateinit var dialogBinding: DialogWarningCustomBinding
+    private lateinit var dialogDeleteBinding: DialogWarningCustomBinding
     private lateinit var viewModel: MainViewModel
     private var listItems = mutableListOf<Item>()
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -49,16 +51,16 @@ class MainActivity : AppCompatActivity(), MainAdapter.MainAdapterInterface {
 
     private fun setDialogWarning(item: Item) {
         val dialog = Dialog(this)
-        dialogBinding = DialogWarningCustomBinding.inflate(layoutInflater)
-        dialog.setContentView(dialogBinding.root)
+        dialogDeleteBinding = DialogWarningCustomBinding.inflate(layoutInflater)
+        dialog.setContentView(dialogDeleteBinding.root)
         val dialogBackground = dialog.window
         dialogBackground?.setBackgroundDrawable(ColorDrawable(0))
         dialog.setCancelable(true)
         dialog.show()
-        dialogBinding.btnDismiss.setOnClickListener {
+        dialogDeleteBinding.btnDismiss.setOnClickListener {
             dialog.dismiss()
         }
-        dialogBinding.btnContinueDelete.setOnClickListener {
+        dialogDeleteBinding.btnContinueDelete.setOnClickListener {
             viewModel.deleteDataItem(this, item)
             this.toast(AppConstants.DELETE_SUCCESS)
             dialog.dismiss()
@@ -75,8 +77,9 @@ class MainActivity : AppCompatActivity(), MainAdapter.MainAdapterInterface {
         setDialogWarning(item)
     }
 
-    override fun updateItem(id: Int) {
-        TODO("Not yet implemented")
+    override fun updateItem(item: Item) {
+        val intent = Intent(this, UpdateItemActivity::class.java)
+        intent.putExtra(AppConstants.TRANSFER_DATA, item as Serializable)
+        startActivity(intent)
     }
-
 }

@@ -18,7 +18,13 @@ class Repository : DBSource {
         return ItemDataSource().deleteDataItem(context, item)
     }
 
-    override fun getItemByID(context: Context, id: Int): Item? {
-        return ItemDataSource().getItemByID(context, id)
+    override fun updateDataItem(
+        context: Context,
+        item: Item
+    ) {
+        return ItemDataSource().updateDataItem(
+            context,
+            item
+        )
     }
 }

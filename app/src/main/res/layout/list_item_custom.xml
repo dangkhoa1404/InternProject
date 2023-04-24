@@ -46,7 +46,8 @@
                     android:layout_height="wrap_content"
                     android:gravity="end"
                     android:text="@string/rv_layout1_text3"
-                    android:textColor="@color/buttonColor" />
+                    android:textColor="@color/buttonColor"
+                    android:textStyle="bold" />
             </LinearLayout>
 
             <LinearLayout
@@ -66,7 +67,8 @@
                     android:layout_height="wrap_content"
                     android:gravity="end"
                     android:text="@string/rv_layout2_text3"
-                    android:textColor="@color/buttonColor" />
+                    android:textColor="@color/buttonColor"
+                    android:textStyle="bold" />
             </LinearLayout>
         </LinearLayout>
     </LinearLayout>
@@ -95,7 +97,8 @@
             android:layout_height="wrap_content"
             android:gravity="end"
             android:text="@string/rv_layout1_text3"
-            android:textColor="@color/buttonColor" />
+            android:textColor="@color/buttonColor"
+            android:textStyle="bold" />
     </LinearLayout>
 
     <ImageView

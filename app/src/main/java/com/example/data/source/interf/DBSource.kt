@@ -7,5 +7,5 @@ interface DBSource {
     fun getAllItems(context: Context): List<Item>
     fun insertDataItem(context: Context, item: Item)
     fun deleteDataItem(context: Context, item: Item)
-    fun getItemByID(context: Context, id: Int): Item?
+    fun updateDataItem(context: Context, item: Item)
 }

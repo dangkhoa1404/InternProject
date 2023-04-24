@@ -163,6 +163,7 @@
                             android:layout_marginEnd="@dimen/padmar_5"
                             android:background="@color/white"
                             android:hint="@string/inputTextHere"
+                            android:inputType="number"
                             android:singleLine="true"
                             android:textSize="@dimen/size_18" />
                     </LinearLayout>
@@ -205,6 +206,7 @@
                             android:layout_marginEnd="@dimen/padmar_5"
                             android:background="@color/white"
                             android:hint="@string/inputTextHere"
+                            android:inputType="number"
                             android:singleLine="true"
                             android:textSize="@dimen/size_18" />
                     </LinearLayout>

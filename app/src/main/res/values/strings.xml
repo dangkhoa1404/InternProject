@@ -28,6 +28,7 @@
     <string name="tvDefault">Default</string>
     <string name="tvTransferOnline">Transfer Online</string>
     <string name="tvNotification">Xác nhận xóa?</string>
+    <string name="tvNotificationFix">Xác nhận sửa?</string>
     <string name="notification">Thông báo</string>
     <string name="tvConfirm">Xác nhận</string>
     <string name="tvDismiss">Không</string>

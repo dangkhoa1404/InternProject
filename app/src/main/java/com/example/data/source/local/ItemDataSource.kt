@@ -17,7 +17,16 @@ class ItemDataSource : DBSource {
         return ItemDatabase.getDatabase(context).itemDAO().deleteDataItem(item)
     }
 
-    override fun getItemByID(context: Context, id: Int): Item? {
-        return ItemDatabase.getDatabase(context).itemDAO().getItemByID(id)
+    override fun updateDataItem(
+        context: Context,
+        item: Item
+    ) {
+        return ItemDatabase.getDatabase(context).itemDAO().updateDataItem(
+            item.id,
+            item.matrixName,
+            item.rangeMinimum,
+            item.rangeMaximum,
+            item.numberOfApproval
+        )
     }
 }

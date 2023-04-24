@@ -2,10 +2,10 @@ package com.example.ui.additem
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Toast
 import androidx.lifecycle.ViewModelProvider
 import com.example.data.network.response.Item
 import com.example.extension.convertToInt
+import com.example.extension.toast
 import com.example.internprojectapplication.databinding.ActivityAddItemBinding
 import com.example.util.AppConstants
 
@@ -28,54 +28,38 @@ class AddItemActivity : AppCompatActivity() {
                 onBackPressedDispatcher.onBackPressed()
             }
             btnAddItem.setOnClickListener {
-                if (edtRangeMinimum.text.isEmpty() || edtRangeMaximum.text.isEmpty() || edtNumberOfApproval.text.isEmpty()) {
-                    Toast.makeText(
-                        this@AddItemActivity,
-                        AppConstants.WARNING_4,
-                        Toast.LENGTH_SHORT
-                    ).show()
+                if (edtAlias.text.isEmpty() || edtRangeMinimum.text.isEmpty() || edtRangeMaximum.text.isEmpty() || edtNumberOfApproval.text.isEmpty()) {
+                    this@AddItemActivity.toast(AppConstants.WARNING_4)
                 } else
                     if (edtRangeMinimum.text.convertToInt() >= edtRangeMaximum.text.convertToInt()) {
-                        Toast.makeText(
-                            this@AddItemActivity,
-                            AppConstants.WARNING_1,
-                            Toast.LENGTH_SHORT
-                        ).show()
+                        this@AddItemActivity.toast(AppConstants.WARNING_1)
                     } else if (edtRangeMinimum.text.convertToInt() < 0
                         || edtRangeMaximum.text.convertToInt() < 0
                     ) {
-                        Toast.makeText(
-                            this@AddItemActivity,
-                            AppConstants.WARNING_2,
-                            Toast.LENGTH_SHORT
-                        ).show()
+                        this@AddItemActivity.toast(AppConstants.WARNING_2)
                     } else if (edtNumberOfApproval.text.convertToInt() < 0) {
-                        Toast.makeText(
-                            this@AddItemActivity,
-                            AppConstants.WARNING_3,
-                            Toast.LENGTH_SHORT
-                        ).show()
+                        this@AddItemActivity.toast(AppConstants.WARNING_3)
                     } else {
                         val item = Item(
                             0,
-                            null,
+                            edtAlias.text.toString(),
                             null,
                             edtRangeMinimum.text.convertToInt(),
                             edtRangeMaximum.text.convertToInt(),
                             edtNumberOfApproval.text.convertToInt()
                         )
                         viewModel.insertDataItem(this@AddItemActivity, item)
-                        Toast.makeText(
-                            this@AddItemActivity,
-                            AppConstants.ADD_SUCCESS,
-                            Toast.LENGTH_SHORT
-                        ).show()
+                        this@AddItemActivity.toast(AppConstants.ADD_SUCCESS)
                         finish()
                     }
-
+            }
+            btnReset.setOnClickListener {
+                edtAlias.text.clear()
+                edtRangeMinimum.text.clear()
+                edtRangeMaximum.text.clear()
+                edtNumberOfApproval.text.clear()
             }
         }
     }
-
 }
 
